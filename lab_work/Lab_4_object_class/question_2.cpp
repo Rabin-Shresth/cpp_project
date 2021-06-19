@@ -14,15 +14,12 @@ class employee
 
         void info()
         {
-            for (int i = 0; i < 2 ; i++)
-            {
                 cout << "\nEnter member id : " ;
                 cin >> id ;
                 cout << "Enter name: " ;
                 cin >> nam ;
                 cout << "Enter the salary amount: " ;
                 cin >> salary ;
-            }
         }
         
         void show()
@@ -33,13 +30,13 @@ class employee
 
 int main()
 {
-    employee em[2] ;
-    for (int i = 0; i < 2 ; i++)
+    employee em[5] ;
+    for (int i = 0; i < 5 ; i++)
     {
         cout << "Enter the details of the employee : " << i+1 << endl ;
         em[i].info() ;        
     }
-    for (int i = 0; i < 2 ; i++)
+    for (int i = 0; i < 5 ; i++)
     {
         em[i].show();
         cout << endl ;
